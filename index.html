@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<title>Seminar</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="main">
+	<div class="content"> 
+		<!--header-->
+		<div class="header">
+			<h1>Nova era poslovanja je tu - jeste li spremni za nju?</h1>
+			<br>
+			<p>Od naredne godine, prijave za PDV i akcizu će se podnositi elektronskim putem, i to će biti zakonska obaveza svakog obveznika u svakom dijelu BiH.  U pitanju je velika i značajna promjena u svakodnevnom poslovanju, ali budite bezbrižni - dovodimo domaće stručnjake u vašu neposrednu blizinu kako bismo vas proveli kroz ovaj proces, korak po korak. Prenijećemo vam znanje o tome kako će se prijave ubuduće podnositi, sa vama podijeliti korisne savjete, skrenuti vam pažnju na moguće greške i odgovoriti na svako vaše pitanje.  Nova era poslovanja je tu, dočekajte je spremni.</p>
+		</div>
+
+		<!-- section 1-->	
+		<div class="section_1">
+			<img class="img" src="img/artboard _1.png">
+		</div>
+		
+		<!-- section 2-->
+		<div class="section_2">
+			<h1>SEMINAR</h1>
+			
+			<h2>“Elektronsko podnošenje prijava za pdv i akcizu”</h2>
+			<br>
+			<h1>TEME</h1>
+			
+			<p><span class="check">✓</span>Registracija korisnika elektronskih usluga</p>
+			<p><span class="check">✓</span>Punomoćnici registrovanih korisnika za e-usluge</p>
+			<p><span class="check">✓</span>Elektronsko podnošenje prijava za PDV i akcizu</p>
+			<p><span class="check">✓</span>Pitanja i odgovori iz sadržaja seminara, ali i sva ostala pitanja iz <br> oblasti primjene Zakona o PDV-u i Zakona o akcizama u BiH</p>
+		</div>
+
+		
+		<div class="button">
+			<button onclick="document.getElementById('id01').style.display='block'">PRIJAVI SE</button>
+		</div>
+
+		<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container" id="form_miro">
+      <label for="uname"><b>Prijavi se</b></label>
+      <input id="name" type="text" placeholder="Ime" name="uname" required>
+
+      <label for="name"><b></b></label>
+      <input id="lastname" type="text" placeholder="Prezime" name="psw" required>
+
+      <label for="name"><b></b></label>
+      <input id="number" type="number" placeholder="JMB" name="num" required>
+      
+      <select name="city">
+  		<option value="BL">Banja Luka</option>
+  		<option value="SA">Sarajevo</option>
+  		<option value="BJ">Bijeljina</option>
+  		<option value="TZ">Tuzla</option>
+	</select>
+        
+      <button class="button_modal" onclick="myFunction()" type="submit">Prijavi se</button>
+      
+    </div>
+
+    
+  </form>
+</div>
+
+		<!-- section 3-->
+		<div class="section_3">
+			<img class="img" src="img/artboard_2.png">
+		</div>
+
+		<!--section 4-->
+		<div class="section_4">
+			<div class="img_4">
+				<img  src="img/artboard _3.png">
+			</div>
+			<div>
+				<h1>Moderator seminara:</h1>
+				
+				<p><span class="name">Ratko Kovačević</span>, načelnik Odjeljenja za komunikacije i međunarodnu sardanju UIO </p>
+				
+				<h1>Predavači na seminarima će biti:</h1>
+				
+				<p><span class="name">Svjetlana Perković</span> pomoćnik direktora u Sektoru za IT </p>
+				<p><span class="name">Milica Vidović</span> šef Odsjeka za obradu poreskih prijava </p>
+				<p><span class="name">Dejan Radić</span> šef Grupe za kontrolu velikih poreskih obveznika RC Banjaluka </p>
+				<p><span class="name">Kosta Đukanović</span> stručni savjetnik za praćenje Jedinstvenog računa</p>
+			</div>
+		</div>
+
+		<!-- section 5-->
+		<div class="section_5">
+			<img class="img" src="img/artboard_4.png">
+		</div>
+
+		<div class="headline">
+			<h1>Mjesto i vrijeme održavanja Seminara:</h1>
+		</div>
+
+		<!-- table img -->
+		<div class="table_img">
+			<img src="img/artboard_6.png">
+		</div>
+
+		
+
+		<!--Section 6-->
+		<div class="section_6 clear">
+			<p>Ukoliko imate pitanje u vezi sa seminarima, budite slobodni da nam se javite:</p>
+			<p class="num">051/ 432-132</p>
+			<img class="img" src="img/artboard_5.png">
+		</div>
+
+	</div>
+
+	<!--footer-->
+	<div class="footer">
+		<p>ORGANIZATORI SEMINARA: BONO D.O.O. I BRANDED D.O.O.</p>
+	</div>
+
+</div>	
+
+
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function myFunction(){
+	var getName = $("#form_miro #name").val();
+	var getLastName = $("#form_miro #lastname").val();
+	var getNumber = $("#form_miro #number").val();
+	var myArr = [];
+	myArr.push(getName, getLastName, getNumber);
+	var counter = 0;
+
+	for(var i=0; i<myArr.length; i++){
+		if(myArr[i].length > 0){
+			counter++;
+		}
+	}
+
+	if(counter === 3){
+		alert('Hvala na prijavi');
+	}
+	
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+p{
+	font-weight: 600;
+}
+
+.main{
+	width: 100%;
+}
+
+.content{
+	width: 100%;
+	height: auto;
+	max-width: 900px;
+	margin: 0 auto;
+	box-shadow: 0px 10px 10px 10px rgba(226,226,226,1);
+}
+
+.header{
+	height: auto;
+	text-align: center;
+	background-color: #F3CB3C;
+	padding:50px 0px;
+}
+
+.header h1{
+	font-weight: 300;
+}
+.header p{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.section_1{
+	margin-top: 70px;
+}
+.section_1 img{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 450px;
+}
+
+.section_2{
+	 text-align: center;
+	 margin-top: 50px;
+}
+
+.section_2 h2{
+	font-weight: 500;
+	color: 	#808080;
+}
+
+.section_2 p{
+	color: #808080; 
+	font-size: 1.2em;
+}
+
+.check{
+	color: #000000;
+	font-size: 1.25em;
+}
+
+.button{
+	margin-top: 80px;
+	width: 100%;
+}
+
+.button button{
+	width: 200px;
+	height: 50px;
+	display: block;
+	margin:0 auto;
+	border-radius: 50px;
+	background-color: #F3CB3C;
+	border: none;
+	font-size: 1.2em;
+	color: #000000;
+	font-weight: 700;
+}
+
+.button_modal{
+	width: 200px;
+	height: 50px;
+	display: block;
+	margin:0 auto;
+	border-radius: 50px;
+	background-color: #F3CB3C;
+	border: none;
+	font-size: 1.2em;
+	color: #000000;
+	font-weight: 700;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+select{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc
+
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 33%; 
+}
+
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+.section_3{
+	margin-top: 80px;
+}
+
+.section_3 img{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 450px;
+}
+
+.section_4{
+	margin-top: 80px;
+	text-align: center;
+
+}
+.img_4 img{
+	margin: 0 auto;
+	display: block;
+}
+.section_4 h1{
+	font-weight: 500;
+}
+
+.name{
+	color: #000000;
+	font-size: 1.05em;
+	font-weight: 700;
+}
+.section_4 p{
+	color: #808080;
+	font-size: 1.05em;
+}
+
+.section_5{
+	margin-top: 80px;
+}
+
+.section_5 img{
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+	display: block;
+}
+
+.headline{
+	text-align: center;
+	margin: 70px 0px;
+}
+.headline h1{
+	font-weight: 500;
+}
+.table_img img{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+
+.section_6{
+	margin-top: 70px;
+	text-align: center;
+	color: #808080;
+	padding-bottom: 25px;
+}
+.section_6 img{
+	width: 100%;
+	max-width: 450px;
+}
+
+.num{
+	font-size: 2em;
+	color: #000000;
+}
+
+.footer{
+	margin: 50px 0px 80px 0px;
+	text-align: center;
+}
+
+.clear{
+	clear: both;
+}
+
+
+
+
+@media screen and (max-width: 650px){
+	.section_1 img{
+		max-width: 350px;
+	}
+	.section_2{
+		margin-left: 10px;
+		margin-right: 10px
+	}
+	.section_3 img{
+		max-width: 350px;
+	}
+	.section_4{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.section_5 img{
+		max-width: 350px;
+	}
+	.section_6{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.section_6 img{
+		max-width: 350px;
+	}
+	
+}
+
+@media screen and (max-width: 700px){
+	.modal-content{
+		width: 70%;
+	}
+	.header p{
+		max-width: 500px;
+	}
+	.table_img img{
+		max-width: 500px;	
+	}
+}
+
+@media screen and (max-width: 500px){
+	.header h1{
+		margin: 0 10px 0 10px;
+	}
+	.header p{
+		margin: 0 10px 0 10px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 450px){
+	.modal-content{
+		width: 100%!important;
+	}
+	.img{
+		max-width:300px!important;
+	}
+}
+
